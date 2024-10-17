@@ -10,14 +10,14 @@ const validEmails = [
   "admin@gmail.com",
 ];
 const userEmail = prompt("Inserisci la tua Email");
-let validEmail;
+let isUserEmailValid = false;
 
 for (let i = 0; i < validEmails.length; i++) {
-  validEmail = validEmails[i];
+  if (userEmail === validEmails[i]) {
+    isUserEmailValid = true;
+  }
 }
-console.log(
-  validEmail === userEmail ? "Benvenuto" : "Ci dispiace.Non puoi accedere"
-);
+console.log(isUserEmailValid);
 
 // ! Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
