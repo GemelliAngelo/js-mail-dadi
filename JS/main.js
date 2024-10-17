@@ -5,18 +5,19 @@
 const validEmails = [
   "hello@gmail.com",
   "me@gmail.com",
+  "manager@gmail.com",
   "here@gmail.com",
   "admin@gmail.com",
 ];
 const userEmail = prompt("Inserisci la tua Email");
+let validEmail;
 
 for (let i = 0; i < validEmails.length; i++) {
-  if (validEmails[i] === userEmail) {
-    console.log("Benvenuto");
-  } else {
-    console.log("Non puoi accedere");
-  }
+  validEmail = validEmails[i];
 }
+console.log(
+  validEmail === userEmail ? "Benvenuto" : "Ci dispiace.Non puoi accedere"
+);
 
 // ! Gioco dei dadi
 // Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
