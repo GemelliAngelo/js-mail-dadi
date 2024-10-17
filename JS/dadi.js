@@ -11,13 +11,13 @@ document.getElementById(
 if (userNum > comNum) {
   document.getElementById(
     "results"
-  ).innerHTML = `<h2 class="text-center py-3 text-success">HAI VINTO!!!</h2>`;
+  ).innerHTML = `<h2 class="text-center fw-bold py-3 text-success">HAI VINTO!!!</h2>`;
 } else if (userNum < comNum) {
   document.getElementById(
     "results"
-  ).innerHTML = `<h2 class="text-center py-3 text-danger">HAI PERSO!!! RITENTA</h2>`;
+  ).innerHTML = `<h2 class="text-center fw-bold py-3 text-danger">HAI PERSO!!! RITENTA</h2>`;
 } else {
   document.getElementById(
     "results"
-  ).innerHTML = `<h2 class="text-center py-3 text-warning">PARITÀ!!! RITENTA</h2>`;
+  ).innerHTML = `<h2 class="text-center fw-bold py-3 text-warning">PARITÀ!!! RITENTA</h2>`;
 }
