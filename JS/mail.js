@@ -17,4 +17,10 @@ for (let i = 0; i < validEmails.length; i++) {
     isUserEmailValid = true;
   }
 }
-console.log(isUserEmailValid ? "BENVENUTO" : "CI DISPIACE. NON PUOI ACCEDERE");
+isUserEmailValid
+  ? (document.getElementById(
+      "access"
+    ).innerHTML = `<h2 class="py-5 text-center fw-bold text-success">BENVENUTO</h2>`)
+  : (document.getElementById(
+      "access"
+    ).innerHTML = `<h2 class="py-5 text-center fw-bold text-danger">CI DISPIACE. NON PUOI ACCEDERE</h2>`);
