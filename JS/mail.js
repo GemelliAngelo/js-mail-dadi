@@ -3,10 +3,10 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull'esito del controllo.
 const validEmails = [
-  "hello@gmail.com",
-  "me@gmail.com",
-  "manager@gmail.com",
-  "here@gmail.com",
+  "hello@email.com",
+  "me@email.com",
+  "manager@email.com",
+  "no-reply@email.com",
   "admin@gmail.com",
 ];
 const userEmail = prompt("Inserisci la tua Email");
